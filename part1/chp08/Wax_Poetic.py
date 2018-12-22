@@ -38,15 +38,9 @@ def makePoem():
     adverb1 = random.choice(Adverbs)
     Adverbs.remove(adverb1)
     
-    if adjective1[0] == "a":
-        A = "An"
-    elif  adjective1[0] == "e":
-        A = "An"
-    elif  adjective1[0] == "i":
-        A = "An"
-    elif  adjective1[0] == "o":
-        A = "An"
-    elif  adjective1[0] == "u":
+    vowls = ["a", "e", "i", "o", "u"]
+
+    if adjective1[0] in vowls:
         A = "An"
     else:
         A = "A"
