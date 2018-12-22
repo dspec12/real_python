@@ -52,7 +52,6 @@ def makePoem():
     {adverb1}, the {noun1} {verb2}
     the {noun2} {verb3} {preposition2} a {adjective3} {noun3}''')
 
-
 def main():
     print(makePoem())
 
