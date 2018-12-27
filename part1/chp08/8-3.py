@@ -40,5 +40,8 @@ del(birthdays["Darth Vader"])
 '''
 Bonus: Make the same dictionary by using dict() and passing in the initial values when you first create the dictionary
 '''
-starwars_bdays = dict([("Luke Skywalker","5/24/19"), ("Obi-WanKenobi","3/11/57"), ("Darth Vader","4/1/41"), ("Yoda","unknown")])
+starwars_bdays = dict([("Luke Skywalker","5/24/19"), 
+                       ("Obi-WanKenobi","3/11/57"), 
+                       ("Darth Vader","4/1/41"), 
+                       ("Yoda","unknown")])
 print(starwars_bdays)
