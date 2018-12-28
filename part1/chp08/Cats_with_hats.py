@@ -14,7 +14,6 @@ Write a program that simply outputs which cats have hats at the end
 '''
 
 CWH = []
-CWNH = []
 
 def place_hat(cat):
     '''Takes or removes hat from a cat's head'''
