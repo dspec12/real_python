@@ -30,7 +30,6 @@ def cat_no_hat(cat):
     else:
         CWNH.append(cat)
         
-
 for round in range(1,101):
     for cat in range(1,101):
         if cat % round:
