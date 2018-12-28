@@ -23,13 +23,6 @@ def place_hat(cat):
     else:
         CWH.append(cat)
         
-def cat_no_hat(cat):
-    '''Returns all cats without hats'''
-    if cat in CWH:
-        pass
-    else:
-        CWNH.append(cat)
-        
 for round in range(1,101):
     for cat in range(1,101):
         if cat % round:
@@ -37,11 +30,5 @@ for round in range(1,101):
         else:
             place_hat(cat)
 
-for cat in range(1,101):
-    cat_no_hat(cat)
-
 print("Total number of cat with hats: ", len(CWH))
 print("Specific cats with hats: ", CWH)
-print()
-print("Total number of cat with no hats: ", len(CWNH))
-print("Specific cats without hats: ", CWNH)
