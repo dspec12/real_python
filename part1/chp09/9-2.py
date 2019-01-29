@@ -2,6 +2,8 @@
 
 import os
 import glob
+import fnmatch
+
 images_dir = "/Users/danielspector/Desktop/images"
 
 '''
@@ -23,9 +25,17 @@ print(glob.glob(png_files))
 '''
 print()
 print("3.)")
-for current_folder, subfolders, file_names in os.walk(images_dir):
-    for file_name in file_names:
-        print(os.path.join(current_folder, file_name))
+all_pngs = glob.glob(os.path.join(images_dir, "**/*.png"), recursive=True)
+for png in all_pngs:
+    os.rename(png, png[:-3] + "jpg")
 
-
-print(os.walk(images_dir))
+'''
+4.)
+'''
+print()
+print("4.)")
+for current_dir, subdirs, files in os.walk(images_dir):
+    for file in files:
+        jpgs = os.path.join(images_dir, file)
+        if fnmatch.fnmatch(jpgs, "*.jpg") == True:
+            print(os.path.exists(jpgs))
