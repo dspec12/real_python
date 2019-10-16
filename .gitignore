@@ -4,3 +4,5 @@ part1/.DS_Store
 .vscode/settings.json
 part1/.vscode/settings.json
 part1/chp08/__pycache__/capitals.cpython-37.pyc
+part1/poem.txt
+part1/output.txt
